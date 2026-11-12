@@ -1,171 +1,171 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#171717">
-<title>Expo Prep List</title>
-<style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Expo Prep List</title><style>
 :root{--black:#191919;--red:#bb2530;--bg:#f2f2f2;--line:#d6d6d6;--muted:#5e5e5e}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:#202020;font:16px/1.4 system-ui,-apple-system,Segoe UI,Arial,sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}[hidden]{display:none!important}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #cc5960;outline-offset:2px}
 header{position:sticky;top:0;z-index:20;background:var(--black);color:white;min-height:72px;display:flex;align-items:center;gap:12px;padding:13px max(14px,calc((100vw - 850px)/2))}.brand{font-size:21px;font-weight:850;letter-spacing:.035em}.brand small{display:block;color:#c9c9c9;font-weight:500;font-size:11px;letter-spacing:.1em}.back{background:#424242;border:1px solid #777;color:white;border-radius:9px;padding:10px 12px;font-size:14px;font-weight:750;white-space:nowrap}.container{max-width:850px;margin:auto;padding:16px 12px 50px}.panel{background:white;border:1px solid var(--line);border-radius:13px;margin:0 0 14px;padding:16px}.panel h2{margin:0 0 10px;font-size:20px}.muted{color:var(--muted)}.small{font-size:13px}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.field{width:100%;background:white;border:1px solid #aaa;border-radius:8px;padding:10px;color:#222;min-height:44px}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid #999;border-radius:9px;background:#e3e3e3;color:#202020;font-weight:750;padding:10px 13px;min-height:43px;text-decoration:none}.btn.dark{background:var(--black);border-color:var(--black);color:#fff}.btn.red{background:var(--red);border-color:var(--red);color:white}.btn.tiny{padding:7px 10px;min-height:34px;font-size:13px}.btn:disabled{opacity:.5}.controls{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.control label{display:block;font-size:12px;font-weight:800;color:var(--muted);margin-bottom:4px}.screen-title{font-size:22px;font-weight:850;margin:0}.dayline{font-size:13px;color:var(--muted);margin-top:3px}.days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px;margin:16px 0}.day{min-height:48px;background:#e0e0e0;color:#333;font-weight:800;border:1px solid #aaa;border-radius:8px;font-size:13px}.day.selected{background:#222;color:white;border-color:#222}.shift-options{display:grid;grid-template-columns:1fr 1fr;gap:12px}.shift-opt{border:2px solid #222;border-radius:11px;background:#222;color:#fff;padding:20px 8px;font-size:24px;font-weight:850}.shift-opt span{display:block;font-size:12px;font-weight:500;margin-top:5px;color:#ddd}
-details.panel{padding:0;overflow:hidden}details.panel>summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px;background:#eeeeee;font-size:20px;font-weight:850;cursor:pointer}details.panel>summary::-webkit-details-marker{display:none}details.panel>summary:after{content:'+';font-size:25px;line-height:1;color:#333}details.panel[open]>summary:after{content:'−'}.inner{padding:15px}.special-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.special{border:1px solid var(--line);border-radius:10px;padding:12px;min-width:0}.special .heading{font-weight:850;font-size:16px}.special h3{margin:10px 0 6px;font-size:17px}.special p{margin:8px 0;white-space:pre-wrap;overflow-wrap:anywhere}.special img{display:block;width:100%;max-height:290px;object-fit:cover;border-radius:8px;margin:9px 0}.subsection{padding:4px 0 14px}.subsection:last-child{padding-bottom:0}.subsection h3{font-size:17px;border-left:4px solid var(--red);padding-left:9px;margin:6px 0 11px}.task{display:flex;gap:12px;align-items:center;padding:11px 0;border-top:1px solid #eee;min-height:48px;cursor:pointer}.task input{height:23px;width:23px;accent-color:var(--red);flex:none;margin:0}.task .name{flex:1}.task.checked .name{text-decoration:line-through;color:#888}.par{background:#ececec;border-radius:5px;padding:3px 7px;font-size:12px;font-weight:750;white-space:nowrap}.empty{padding:8px 0;color:#777;font-size:14px}.admin-nav{display:flex;gap:8px;flex-wrap:wrap;margin:13px 0}.admin-section{border-top:1px solid #ddd;padding-top:15px;margin-top:15px}.admin-card{border:1px solid #d6d6d6;border-radius:10px;padding:13px;margin:10px 0;background:#fafafa}.admin-card h3{margin:0 0 10px;font-size:17px}.admin-card label:not(.checkrow){display:block;margin:12px 0 5px;font-size:13px;font-weight:800}.admin-card textarea{min-height:90px;resize:vertical}.admin-card img{display:block;width:100%;max-height:240px;object-fit:contain;margin:10px 0;border-radius:8px}.checkrow{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:14px;font-weight:700}.checkrow input{width:19px;height:19px;accent-color:var(--red)}.item-edit{border-top:1px solid #ddd;padding:13px 0}.item-edit:first-of-type{border-top:0}.item-edit strong{display:block;margin-bottom:8px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.form-grid label{font-size:12px;font-weight:750;color:var(--muted)}.form-grid label .field{margin-top:4px}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}.notice{font-size:12px;line-height:1.55;color:#555;margin:13px 0}.pill{display:inline-block;background:#ffeded;color:#9e2028;font-size:11px;font-weight:800;padding:3px 7px;border-radius:30px;margin-left:7px}.toolbar{display:flex;gap:7px;flex-wrap:wrap}.admin-tabs{margin:10px 0}.two-columns{display:grid;grid-template-columns:1fr 1fr;gap:8px}.special-prep-row{display:flex;gap:8px;align-items:center;margin:8px 0}.special-prep-row .field{flex:1;min-width:0}.special-prep-list{padding-left:22px;margin:7px 0}
+details.panel{padding:0;overflow:hidden}details.panel>summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px;background:#eeeeee;font-size:20px;font-weight:850;cursor:pointer}details.panel>summary::-webkit-details-marker{display:none}details.panel>summary:after{content:'+';font-size:25px;line-height:1;color:#333}details.panel[open]>summary:after{content:'−'}.inner{padding:15px}.special-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.special{border:1px solid var(--line);border-radius:10px;padding:12px;min-width:0}.special .heading{font-weight:850;font-size:16px}.special h3{margin:10px 0 6px;font-size:17px}.special p{margin:8px 0;white-space:pre-wrap;overflow-wrap:anywhere}.special img{display:block;width:100%;max-height:290px;object-fit:cover;border-radius:8px;margin:9px 0}.subsection{padding:4px 0 14px}.subsection:last-child{padding-bottom:0}.subsection h3{font-size:17px;border-left:4px solid var(--red);padding-left:9px;margin:6px 0 11px}.task{display:flex;gap:12px;align-items:center;padding:11px 0;border-top:1px solid #eee;min-height:48px;cursor:pointer}.task input{height:23px;width:23px;accent-color:var(--red);flex:none;margin:0}.task .name{flex:1}.task.checked .name{text-decoration:line-through;color:#888}.task .item-copy{flex:1;min-width:0}.task .item-copy .name{display:block}.task .item-note{display:block;font-size:12px;color:#666;line-height:1.4;margin-top:3px}.task.checked .item-note{color:#999}.par{background:#ececec;border-radius:5px;padding:3px 7px;font-size:12px;font-weight:750;white-space:nowrap}.empty{padding:8px 0;color:#777;font-size:14px}.admin-nav{display:flex;gap:8px;flex-wrap:wrap;margin:13px 0}.admin-section{border-top:1px solid #ddd;padding-top:15px;margin-top:15px}.admin-card{border:1px solid #d6d6d6;border-radius:10px;padding:13px;margin:10px 0;background:#fafafa}.admin-card h3{margin:0 0 10px;font-size:17px}.admin-card label:not(.checkrow){display:block;margin:12px 0 5px;font-size:13px;font-weight:800}.admin-card textarea{min-height:90px;resize:vertical}.admin-card img{display:block;width:100%;max-height:240px;object-fit:contain;margin:10px 0;border-radius:8px}.checkrow{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:14px;font-weight:700}.checkrow input{width:19px;height:19px;accent-color:var(--red)}.item-edit{border-top:1px solid #ddd;padding:13px 0}.item-edit:first-of-type{border-top:0}.item-edit strong{display:block;margin-bottom:8px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.form-grid label{font-size:12px;font-weight:750;color:var(--muted)}.form-grid label .field{margin-top:4px}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}.notice{font-size:12px;line-height:1.55;color:#555;margin:13px 0}.pill{display:inline-block;background:#ffeded;color:#9e2028;font-size:11px;font-weight:800;padding:3px 7px;border-radius:30px;margin-left:7px}.toolbar{display:flex;gap:7px;flex-wrap:wrap}.admin-tabs{margin:10px 0}.two-columns{display:grid;grid-template-columns:1fr 1fr;gap:8px}.special-prep-row{display:flex;gap:8px;align-items:center;margin:8px 0}.special-prep-row .field{flex:1;min-width:0}.special-prep-list{padding-left:22px;margin:7px 0}
 @media(max-width:560px){header{padding:12px}.brand{font-size:19px}.container{padding:12px 9px 35px}.panel{padding:13px}.inner{padding:13px}.special-grid{grid-template-columns:1fr}.day{font-size:12px;min-height:44px}.form-grid{grid-template-columns:1fr 1fr}.controls{grid-template-columns:1fr 1fr}}
-</style>
-</head>
-<body>
-<header><button id="back" class="back" hidden type="button">← Back</button><div class="brand">EXPO PREP LIST<small>TELLERS EXPO</small></div></header>
+
+.shift-header{position:relative;padding:16px}.shift-header>.row{flex-wrap:nowrap}.shift-header .screen-title{font-size:20px}.header-specials{flex:none}.header-specials>summary{list-style:none;cursor:pointer;padding:11px 13px;border:1px solid #999;border-radius:9px;background:#e3e3e3;font-size:15px;font-weight:850;color:#222;white-space:nowrap}.header-specials>summary::-webkit-details-marker{display:none}.header-specials>summary:after{content:' +';font-weight:850}.header-specials[open]>summary{background:#222;color:white}.header-specials[open]>summary:after{content:' −'}.header-specials .inner:has(#daily-display[hidden]){grid-template-columns:1fr}.header-specials .inner{position:absolute;left:0;right:0;top:calc(100% - 2px);z-index:10;background:white;border:1px solid var(--line);border-top:0;border-radius:0 0 12px 12px;padding:14px;box-shadow:0 9px 16px #0002}
+
+/* Fixed staff context; content scrolls underneath */
+.staff-sticky{position:sticky;top:72px;z-index:16;background:var(--bg);padding-top:8px;margin-top:-8px}.staff-sticky .panel{margin-bottom:12px}.special-popup{border-top:1px solid #ddd;padding-top:12px;margin-top:12px}.special-head{display:flex;align-items:center;gap:8px;justify-content:space-between}.admin-bottom{position:fixed;bottom:0;left:0;right:0;z-index:50;background:#262626;color:white;padding:12px max(14px,calc((100vw - 850px)/2));box-shadow:0 -5px 16px #0003;display:flex;gap:12px;align-items:center;justify-content:space-between}.admin-bottom .btn{min-width:105px}.admin-shift-grid{display:grid;grid-template-columns:24px repeat(7,minmax(0,1fr));gap:3px;margin:12px 0}.admin-shift-grid button{padding:9px 0;min-width:0;font-size:11px;font-weight:800;border-radius:6px;background:#e2e2e2;color:#333;border:1px solid #aaa}.admin-shift-grid button.active{background:#1d1d1d;color:white}.admin-shift-grid .shift-label{display:flex;justify-content:center;align-items:center;font-size:11px;font-weight:900}.duty-line{display:flex;gap:8px;align-items:center;border-bottom:1px solid #e4e4e4;padding:9px 0}.duty-line .duty-content{flex:1;min-width:0}.scope{font-size:11px;color:#656565}.icon-btn{width:37px;height:37px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #bbb;border-radius:8px;color:#252525;background:#eee;font-size:18px;flex-shrink:0}.icon-btn.danger{color:#9f2830}.icon-btn:disabled{opacity:.22;cursor:default}.day-picks{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}.day-picks button{padding:10px 0;border:1px solid #aaa;border-radius:7px;background:#e5e5e5;color:#333;font-weight:800;font-size:12px}.day-picks button.chosen{background:#202020;color:#fff}.editing-form{border:1px solid #bbb;border-radius:10px;background:#f7f7f7;padding:12px;margin:10px 0}.editing-form label{font-size:13px;font-weight:800;display:block;margin:9px 0 4px}.admin-extra-padding{padding-bottom:100px}.save-note{font-size:13px;line-height:1.3}.inline-set{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.flag{font-size:11px;font-weight:800;background:#e9e9e9;padding:3px 6px;border-radius:5px}.empty-sub{font-size:13px;color:#777;padding:6px 0}.admin-subtitle{font-size:14px;color:#666;margin:6px 0 14px}.fixed-name{font-weight:850}.admin-item{padding:9px 0;border-bottom:1px solid #e4e4e4}.photo-preview{max-width:100%;max-height:230px;object-fit:contain;border-radius:8px;margin-top:8px}.special-field{margin:8px 0 16px}.special-field label{display:block;font-size:13px;font-weight:750;margin-bottom:4px}.modal-background{position:fixed;inset:0;background:#0008;z-index:90;display:grid;place-items:center;padding:15px}.modal{background:white;max-width:420px;width:100%;border-radius:13px;padding:20px}.modal h3{margin-top:0}
+@media(max-width:560px){.staff-sticky{top:65px}.admin-bottom{padding:12px}.admin-shift-grid{grid-template-columns:21px repeat(7,minmax(0,1fr));gap:2px}.admin-shift-grid button{font-size:10px}.day-picks button{font-size:11px}}
+.brunch-instructions{margin-top:16px;padding:12px;background:#f5f5f5;border:1px solid #ddd;border-radius:9px}.brunch-instructions h3{margin:0 0 8px;font-size:16px}.brunch-instructions ul{padding-left:20px;margin:8px 0;line-height:1.65}.brunch-instructions li{margin:6px 0}
+.prime-note{background:#f5f5f5;border:1px solid #ddd;border-radius:9px;padding:12px;margin-top:12px}.prime-note h3{font-size:16px;margin:0 0 8px}.prime-note ul{padding-left:20px;margin:8px 0;line-height:1.65}.prime-note li{margin:6px 0}#prime-details summary,#brunch-details summary{background:#eee}.timing-note{font-size:13px;font-weight:800;color:#8c1f28;margin:0 0 10px}.service-list{line-height:1.75;padding-left:22px;margin:8px 0 0}
+
+/* Searchable station reference */
+.lookup-top{margin-left:auto;background:#f1f1f1;border:1px solid #ddd;border-radius:10px;min-width:48px;min-height:46px;padding:8px 11px;color:#111;font-size:23px;font-weight:850;line-height:1}
+.lookup-top.active{background:#bb2530;color:#fff;border-color:#bb2530}
+.lookup-search{position:sticky;top:70px;z-index:15;background:var(--bg);padding:10px 0 12px}
+.lookup-heading{font-size:23px;font-weight:850;margin:0 0 8px}
+.lookup-input{width:100%;height:50px;background:white;border:2px solid #bbb;border-radius:10px;font-size:18px;padding:10px 13px;color:#222}
+.lookup-results-count{font-size:13px;color:#555;margin:7px 0 0}
+.lookup-entry{padding:0;overflow:hidden}
+.lookup-entry>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:16px;font-weight:800;font-size:17px}
+.lookup-entry>summary::-webkit-details-marker{display:none}
+.lookup-entry>summary:after{content:'+';font-size:24px}
+.lookup-entry[open]>summary:after{content:'−'}
+.lookup-entry[open]>summary{border-bottom:1px solid #ddd;background:#f4f4f4}
+.lookup-entry .lookup-description{padding:14px 16px 17px;font-size:16px;line-height:1.55}
+.lookup-category{display:block;color:#666;font-size:12px;font-weight:650;margin-top:3px}
+.lookup-hint{color:#666;font-size:13px;margin:8px 0}
+@media(max-width:560px){.lookup-top{min-width:43px;min-height:43px;font-size:21px}.lookup-search{top:67px}}
+
+/* Every lookup entry is visible without opening a dropdown. */
+.lookup-section-heading{font-size:17px;font-weight:850;margin:23px 0 8px;padding-left:3px}
+.lookup-entry{padding:13px 15px 14px;margin:8px 0!important}
+.lookup-entry-name{font-size:16px;font-weight:850;line-height:1.3}
+.lookup-entry .lookup-description{padding:5px 0 0;font-size:15px;line-height:1.5;color:#303030}
+
+.daily-special-card{border-left:5px solid var(--red);padding:14px 16px}
+.daily-special-card .daily-label{font-size:12px;font-weight:850;letter-spacing:.08em;color:#a3222c;text-transform:uppercase;margin-bottom:5px}
+.daily-special-card .daily-name{font-size:21px;font-weight:850;margin:0 0 7px}
+.daily-special-card .daily-instructions{font-size:15px;line-height:1.5;margin:0}
+</style></head><body>
+<header><button id="back" class="back" type="button" hidden>← Back</button><div class="brand">EXPO PREP LIST<small>TELLERS EXPO</small></div><button class="lookup-top" id="lookup-toggle" aria-label="Search menu reference" title="Search menu reference" type="button">?</button></header>
 <main class="container">
-<section id="shift-screen" class="panel" hidden>
-<h2 style="text-align:center;margin:5px 0 0">What shift are you working?</h2>
-<div id="day-buttons" class="days" aria-label="Choose day"></div>
-<div class="shift-options"><button type="button" class="shift-opt" data-select-shift="AM">AM<span>Before 3:30 PM</span></button><button type="button" class="shift-opt" data-select-shift="PM">PM<span>From 3:30 PM</span></button></div>
-<p class="small muted" style="text-align:center">Today and your shift are detected automatically. Choose another here.</p>
-<button type="button" id="admin-from-picker" class="btn">Admin</button>
+<section id="shift-screen" class="panel" hidden><h2 style="text-align:center">What shift are you working?</h2><div class="days" id="day-buttons"></div><div class="shift-options"><button class="shift-opt" data-select-shift="AM">AM<span>Before 3:30 PM</span></button><button class="shift-opt" data-select-shift="PM">PM<span>From 3:30 PM</span></button></div><p class="small muted" style="text-align:center">Today's shift opens automatically. Use Back to choose another.</p></section>
+
+<section id="lookup-screen" hidden>
+  <div class="lookup-search">
+    <h1 class="lookup-heading">Menu Lookup</h1>
+    <input id="lookup-input" class="lookup-input" type="search" placeholder="Search any dish, sauce, or garnish…" aria-label="Search menu items" autocomplete="off">
+    <p id="lookup-count" class="lookup-results-count" aria-live="polite"></p>
+  </div>
+  <div id="lookup-results"></div>
+  
 </section>
-<section id="list-screen"><noscript><div class="panel">Please enable JavaScript in Chrome to use this prep list.</div></noscript>
-<div class="panel"><div class="row"><div><div class="screen-title" id="shift-title"></div><div class="dayline" id="shift-date"></div></div><div class="toolbar"><button id="change-shift" class="btn tiny">Change day / shift</button><button id="admin-from-list" class="btn tiny">Admin</button></div></div></div>
-<details class="panel" open id="specials-details"><summary>Specials</summary><div class="inner special-grid"><div id="daily-display" class="special"></div><div id="monthly-display" class="special"></div></div></details>
-<details class="panel" open id="duties-details"><summary>Duties</summary><div class="inner"><section class="subsection"><h3>On Arrival</h3><div id="arrival-tasks"></div></section><section class="subsection"><h3>Check Out</h3><div id="checkout-tasks"></div></section></div></details>
-<details class="panel" open id="prep-details"><summary>Stock / Prep</summary><div class="inner" id="prep-tasks"></div></details>
-<button id="clear-checks" class="btn tiny">Clear checkmarks for this shift</button>
-<p class="notice">Checkmarks and Admin edits in this prototype are saved in this browser only. Publishing on GitHub Pages does not automatically share edits or pictures between phones.</p>
-</section>
-<section id="admin-screen" hidden>
-<div class="panel"><div class="row"><h2 style="margin:0">Admin</h2><button id="admin-done" class="btn tiny dark">Done</button></div><p class="small muted">Manage daily and monthly specials, prep items, and shift duties.</p><nav class="admin-nav"><button class="btn tiny dark" data-admin-tab="specials">Specials</button><button class="btn tiny" data-admin-tab="prep">Stock / Prep</button><button class="btn tiny" data-admin-tab="duties">Duties</button></nav>
-<div id="admin-specials"><h3>Daily Special</h3><div id="admin-days" class="days admin-tabs"></div><div id="daily-editor"></div><div class="admin-section"><h3 id="month-title">Monthly Special</h3><div id="monthly-editor"></div></div></div>
-<div id="admin-prep" hidden><p class="small muted">Regular items show every day. Brunch items show Saturday and Sunday only.</p><div id="prep-editor"></div><div class="admin-card"><h3>Add a prep item</h3><div class="form-grid"><label style="grid-column:1/-1">Item name<input id="new-item-name" class="field" maxlength="100" placeholder="New item"></label><label>Section<select id="new-item-section" class="field"></select></label><label>Par<input id="new-item-par" class="field" maxlength="45" placeholder="e.g. 1 pan"></label></div><label class="checkrow"><input type="checkbox" id="new-item-brunch"> Brunch only (Sat–Sun)</label><button type="button" id="add-item" class="btn red" style="margin-top:12px">+ Add prep item</button></div></div>
-<div id="admin-duties" hidden><p class="small muted">Each shift has its own On Arrival and Check Out tasks.</p><div class="controls"><div class="control"><label for="duties-shift">Shift</label><select id="duties-shift" class="field"><option>AM</option><option>PM</option></select></div><div class="control"><label for="duties-type">Section</label><select id="duties-type" class="field"><option value="arrival">On Arrival</option><option value="checkout">Check Out</option></select></div></div><div id="duty-editor"></div><div class="admin-card"><h3>Add a duty</h3><input id="new-duty" class="field" maxlength="110" placeholder="New duty"><button id="add-duty" class="btn red" style="margin-top:10px">+ Add duty</button></div></div>
-<p class="notice">Admin has no password in this local preview. Before putting it into staff use, shared saving and protected admin access will be needed.</p>
-</div></section>
-</main>
+<section id="list-screen" hidden>
+<div class="staff-sticky"><div class="panel shift-header"><div class="row" style="flex-wrap:nowrap"><div style="min-width:0"><div id="shift-title" class="screen-title"></div><div id="shift-date" class="dayline"></div></div><button id="specials-toggle" class="btn" aria-expanded="false" style="flex-shrink:0">Specials +</button></div><div class="special-popup" id="specials-popup" hidden><div class="special-grid"><div class="special" id="daily-display"></div><div class="special" id="monthly-display"></div></div></div></div></div>
+
+<details id="brunch-details" class="panel" hidden><summary>Brunch · served until 2:00 PM</summary><div class="inner"><div class="brunch-instructions"><h3>Brunch Setup Instructions</h3><ul><li><b>Hot honey:</b> Place in the window to heat up; it should be served warm.</li><li><b>Butter:</b> Make sure the butter is stocked.</li><li><b>Oranges:</b> Cut 13 oranges into eighths. Fill a 4-inch sixth pan with oranges for service.</li><li><b>Counter:</b> Set out syrup, paprika, and powdered sugar.</li></ul></div></div></details>
+<details id="prime-details" class="panel" hidden><summary>Prime Rib · starts at 4:30 PM</summary><div class="inner"><div class="prime-note"><h3>Every Prime Rib Comes With</h3><ul class="service-list"><li>Squash</li><li>Baked potato</li><li>Two butters for the baked potato</li><li>Au jus</li><li>Creamy horseradish</li></ul><h3 style="margin-top:16px">Special Instructions</h3><ul><li>Make sure raw horseradish is stocked.</li><li>Make two extra creamy horseradishes.</li><li>Every baked potato gets two butters.</li><li>Have a pan of bacon available.</li><li><b>Loaded baked potato order:</b> cheese → bacon → sour cream → chives.</li></ul></div></div></details>
+<details id="duties-details" class="panel"><summary>Duties</summary><div class="inner"><section class="subsection"><h3>On Arrival</h3><div id="arrival-tasks"></div></section><section class="subsection"><h3>On Departure</h3><div id="departure-tasks"></div></section></div></details>
+<details class="panel" id="prep-details"><summary>Stock / Prep</summary><div class="inner" id="prep-tasks"></div></details>
+<button id="clear-checks" class="btn tiny">Clear checkmarks for this shift</button></section></main>
 <script>
 (()=>{'use strict';
 const $=id=>document.getElementById(id);
 const DAYS=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-const SECTIONS=['Produce','Pan 1','Pan 2','Back Shelf','Cooler · Container 1','Cooler · Container 2','Cooler · Other','Cups & Supplies','Other'];
+// Indexed by JavaScript day of week (Sunday=0). Friday/Saturday use Prime Rib separately.
+const DAILY_SPECIALS={
+  0:{name:'Chicken Bacon Ranch Flatbread',instructions:'Finish with a zigzag of ranch on top.'},
+  1:{name:'Chile Rellenos',instructions:'Add lettuce, pico, sour cream, and a knife.'},
+  2:{name:'Three Baja Fish Tacos',instructions:'Serve with a 2 oz portion cup of pico, a 2 oz portion cup of guacamole, and tortilla chips.'},
+  3:{name:'Adobo Chicken Bowl',instructions:'Add lime and cilantro.'},
+  4:{name:'Cuban',instructions:'Nothing additional to add.'}
+};
+const SHORT=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const SECTIONS=['Pan 1','Pan 2','Cooler · Container 1','LTO Pan','Cooler · Other','Back Shelf','Cups & Supplies'];
 const RAW=[
-['pico','Pico','Produce'],['lemons','Lemons','Produce'],['limes','Limes','Produce'],['oranges','Oranges','Produce'],
 ['tartar','Tartar','Pan 1'],['horseradish','Horseradish','Pan 1'],['lemon-garlic','Lemon garlic','Pan 1'],['sour-cream','Sour cream','Pan 1'],['mayonnaise','Mayonnaise','Pan 1'],['thousand-island','Thousand Island','Pan 1'],
-['sriracha','Sriracha','Pan 2'],['cocktail','Cocktail','Pan 2'],['chipotle-ranch','Chipotle ranch','Pan 2'],['honey-mustard','Honey mustard','Pan 2'],['balsamic','Balsamic','Pan 2'],['blue-cheese','Blue cheese','Pan 2'],['whiskey','Whiskey','Pan 2'],['barbecue','Barbecue','Pan 2'],['remy','Remy','Pan 2'],['ranch','Ranch','Pan 2'],
-['hot-honey','Hot honey','Back Shelf'],['syrup','Syrup','Back Shelf'],['butter','Butter','Back Shelf'],['caramel','Caramel','Back Shelf'],['sprinkles','Sprinkles','Back Shelf'],['paprika','Paprika','Back Shelf'],['powdered-sugar','Powdered sugar','Back Shelf'],
+['sriracha','Sriracha','Pan 2'],['cocktail','Cocktail','Pan 2'],['chipotle-ranch','Chipotle ranch','Pan 2'],['honey-mustard','Honey mustard','Pan 2'],['balsamic','Balsamic','Pan 2'],['barbecue','Barbecue','Pan 2'],['remy','Remy','Pan 2'],['whiskey','Whiskey','Pan 2'],['blue-cheese','Blue cheese','Pan 2'],['ranch','Ranch','Pan 2'],
+['butter','Butter','Back Shelf'],['caramel','Caramel','Back Shelf'],['sprinkles','Sprinkles','Back Shelf'],
 ['red-pepper','Red pepper','Cooler · Container 1'],['pepperoncinis','Pepperoncinis','Cooler · Container 1'],['cucumber','Cucumber','Cooler · Container 1'],['salami','Salami','Cooler · Container 1'],
-['lettuce','Lettuce','Cooler · Container 2'],['tomato','Tomato','Cooler · Container 2'],['onion','Onion','Cooler · Container 2'],
+['lettuce','Lettuce','LTO Pan'],['tomato','Tomato','LTO Pan'],['onion','Onion','LTO Pan'],
 ['whip-cream','Whip cream','Cooler · Other'],['strawberries','Strawberries','Cooler · Other'],['cottage-cheese','Cottage cheese','Cooler · Other'],['guacamole','Guacamole','Cooler · Other'],['applesauce','Applesauce','Cooler · Other'],['oyster-sets','Oyster sets','Cooler · Other'],['raw-horseradish','Raw horseradish','Cooler · Other'],
-['crackers','Crackers','Cups & Supplies'],['wet-naps','Wet naps','Cups & Supplies'],['2oz-paper-cups','2 oz paper cups','Cups & Supplies'],['2oz-plastic-cups','2 oz plastic cups','Cups & Supplies'],['4oz-plastic-cups','4 oz plastic cups','Cups & Supplies'],['2oz-plastic-lids','2 oz plastic cup lids','Cups & Supplies'],['4oz-plastic-lids','4 oz plastic cup lids','Cups & Supplies'],['8oz-paper-cups','8 oz paper cups','Cups & Supplies'],['16oz-paper-cups','16 oz paper cups','Cups & Supplies'],['paper-cup-lids','Paper cup lids','Cups & Supplies']
+['crackers','Crackers','Cups & Supplies'],['wet-naps','Wet naps','Cups & Supplies'],['2oz-paper-cups','2 oz paper cups','Cups & Supplies'],['2oz-plastic-cups','2 oz plastic cups','Cups & Supplies'],['4oz-plastic-cups','4 oz plastic cups','Cups & Supplies'],['2oz-plastic-lids','2 oz plastic cup lids','Cups & Supplies'],['4oz-plastic-lids','4 oz plastic cup lids','Cups & Supplies'],['8oz-paper-cups','8 oz paper cups','Cups & Supplies'],['16oz-paper-cups','16 oz paper cups','Cups & Supplies'],['paper-cup-lids','Paper cup lids','Cups & Supplies'],['paper-bags','Paper bags','Cups & Supplies']
 ];
-const DEFAULT_ITEMS=RAW.map(([id,name,section])=>({id,name,section,par:'',brunchOnly:false}));
-const DEFAULT_DUTIES={AM:{arrival:['Unload cart','Lay mats','Cut lemons'],checkout:[]},PM:{arrival:[],checkout:['Put away mats','Load carts','Stock everything for AM']}};
-const PREFIX='expo-prep-v2-';const OLD='expo-prep-v1-';
-function read(key,fallback,old=false){try{const s=localStorage.getItem((old?OLD:PREFIX)+key);return s===null?fallback:JSON.parse(s);}catch(e){return fallback;}}
-function save(key,value){try{localStorage.setItem(PREFIX+key,JSON.stringify(value));return true;}catch(e){alert('Unable to save in this browser. Your storage might be full, especially if photos have been added.');return false;}}
-function clone(x){return JSON.parse(JSON.stringify(x));}
-function migrateItems(){const old=read('items',null,true);const already=read('items',null);if(Array.isArray(already))return already;const result=clone(DEFAULT_ITEMS);if(Array.isArray(old)){for(const existing of old){const match=result.find(i=>i.id===existing.id);if(match){match.par=existing.regular||'';}else if(existing.custom){result.push({id:existing.id,name:existing.name,section:SECTIONS.includes(existing.section)?existing.section:'Other',par:existing.regular||'',brunchOnly:false});}}}return result;}
-let items=migrateItems();if(!Array.isArray(items))items=clone(DEFAULT_ITEMS);for(const def of DEFAULT_ITEMS){if(!items.some(x=>x.id===def.id))items.push(clone(def));}
-// Fixed grouping stays consistent even when an older file saved item locations.
-for(const item of items){const def=DEFAULT_ITEMS.find(x=>x.id===item.id);if(def)item.section=def.section;item.brunchOnly=!!item.brunchOnly;if(typeof item.par!=='string')item.par=String(item.par||'');}
-// Do not write during startup; full browser storage can otherwise block page loading.
-let duties=read('duties',clone(DEFAULT_DUTIES));if(!duties||typeof duties!=='object')duties=clone(DEFAULT_DUTIES);for(const shift of ['AM','PM'])for(const type of ['arrival','checkout'])if(!Array.isArray(duties?.[shift]?.[type])){if(!duties[shift])duties[shift]={};duties[shift][type]=clone(DEFAULT_DUTIES[shift][type]);}
-// Keep saved admin duties while removing the two obsolete AM arrival tasks.
-duties.AM.arrival=duties.AM.arrival.filter(task=>!['cut cilantro','cut limes'].includes(String(task).trim().toLowerCase()));
-// Preserve existing duty edits without an unnecessary startup write.
-let selectedDate=new Date();selectedDate.setHours(12,0,0,0);let shift=new Date().getHours()*60+new Date().getMinutes()>=15*60+30?'PM':'AM';let adminDay=selectedDate.getDay();let adminTab='specials';let fromAdmin='list';let done={};
-function node(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e;}
-function dateKey(d){return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;}
-function monthKey(d){return dateKey(d).slice(0,7);}function checkKey(){return `done-${dateKey(selectedDate)}-${shift}`;}function isBrunch(){return [0,6].includes(selectedDate.getDay());}
-function show(screen){for(const s of ['shift','list','admin'])$(s+'-screen').hidden=s!==screen;$('back').hidden=false;window.scrollTo(0,0);}
-function chooseDay(day){const today=new Date();today.setHours(12,0,0,0);const diff=((day-today.getDay())+7)%7;selectedDate=new Date(today);selectedDate.setDate(today.getDate()+diff);renderDayButtons();}
-function renderDayButtons(){const target=$('day-buttons');target.replaceChildren();for(let i=1;i<=7;i++){const d=i%7;const b=node('button','day'+(selectedDate.getDay()===d?' selected':''),DAYS[d].slice(0,3));b.type='button';b.setAttribute('aria-pressed',String(selectedDate.getDay()===d));b.addEventListener('click',()=>chooseDay(d));target.append(b);}}
-function openList(){done=read(checkKey(),{});if(!done||typeof done!=='object')done={};$('shift-title').textContent=DAYS[selectedDate.getDay()]+' · '+shift;$('shift-date').textContent=selectedDate.toLocaleDateString(undefined,{year:'numeric',month:'long',day:'numeric'});renderSpecials();renderTasks();show('list');}
-function taskRow(id,text,par){const row=node('label','task'+(done[id]?' checked':''));const box=node('input');box.type='checkbox';box.checked=!!done[id];box.addEventListener('change',()=>{done[id]=box.checked;save(checkKey(),done);row.classList.toggle('checked',box.checked);});row.append(box,node('span','name',text));if(par)row.append(node('span','par',par));return row;}
-function renderTasks(){
-for(const type of ['arrival','checkout']){
- const target=$(type+'-tasks');target.replaceChildren();const names=duties[shift][type];
- names.forEach((name,i)=>target.append(taskRow('duty-'+type+'-'+i,name,'')));
- // Special prep entries belong in the AM On Arrival checklist for the selected day.
- if(type==='arrival'&&shift==='AM'){
-  for(const specialType of ['daily','monthly']){
-   const special=getSpecial(specialType,selectedDate.getDay());
-   const key=specialType==='daily'?String(selectedDate.getDay()):monthKey(selectedDate);
-   const prep=Array.isArray(special.prepItems)?special.prepItems:[];
-   prep.forEach((item,i)=>{
-    const label=typeof item==='string'?item:item.name;
-    if(label)target.append(taskRow('special-duty-'+specialType+'-'+key+'-'+i,label,''));
-   });
-  }
+const DEFAULT_PARS={"tartar":"3","horseradish":"3","lemon-garlic":"2","sour-cream":"1","mayonnaise":"1","thousand-island":"2","sriracha":"1","cocktail":"1","chipotle-ranch":"1","honey-mustard":"1","balsamic":"1","blue-cheese":"2","whiskey":"1","barbecue":"2","remy":"1","ranch":"3–4","whip-cream":"3","guacamole":"3–4","applesauce":"8–10"};
+const items=RAW.map(([id,name,section])=>({id,name,section,par:DEFAULT_PARS[id]||''}));
+const PREFIX='expo-prep-simple-v1-';
+function read(k,fallback){try{const v=localStorage.getItem(PREFIX+k);return v===null?fallback:JSON.parse(v)}catch(e){return fallback}}
+function write(k,v){try{localStorage.setItem(PREFIX+k,JSON.stringify(v))}catch(e){}}
+function el(tag,cls,text){const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n}
+function button(text,fn,cls='btn tiny'){const b=el('button',cls,text);b.type='button';b.addEventListener('click',fn);return b}
+function dateKey(d){return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')}
+let selectedDate=new Date();let shift=new Date().getHours()*60+new Date().getMinutes()>=930?'PM':'AM';let done={};selectedDate.setHours(12,0,0,0);
+function checkKey(){return 'check-'+dateKey(selectedDate)+'-'+shift}
+
+const LOOKUP_ENTRIES=[["Appetizers","Artichoke","Monkey dish of lemon garlic aioli; serve with 2 lemons and wet wipes."],["Appetizers","Brussels","Bacon aioli."],["Appetizers","Crab Cakes","Drizzle with Remy; add a pinch of microgreens; serve with 1 lemon."],["Appetizers","Fondue","Serve on a Teller’s board with candle holder, kettle chips, red peppers, bread slices, salami, and apples."],["Appetizers","Mezze Plate","Drizzle olive oil on both dips; serve with cucumber and red pepper."],["Appetizers","Spicy Ahi Tacos","Sriracha aioli drizzle and generous dusting of furikake."],["Appetizers","Wings","Ranch or blue cheese; serve with celery, carrots, and wet wipes."],["Appetizers","Oysters","Set up on a plate with cocktail sauce, horseradish and oyster wash; add 2 lemons, saltines, and small forks."],["Appetizers","Shrimp — ½ lb","In a bowl: 1 cocktail sauce, 2 lemons, wet wipes."],["Appetizers","Shrimp — Full lb","In a bowl: 2 cocktail sauces and 4 lemons."],["Happy Hour Appetizers","HH Buffalo Cauliflower","Ranch."],["Happy Hour Appetizers","HH Cheesy Garlic Bread","Parsley."],["Happy Hour Appetizers","HH Fish Tacos","Top with pico."],["Happy Hour Appetizers","HH Guac and Pico","Warm tortilla chips on a brown tray; monkey dish of guac topped with pico; monkey dish of pico."],["Happy Hour Appetizers","HH Hummus","No extra garnish or sauce."],["Happy Hour Appetizers","HH Mac n Chz Bites","Sriracha aioli."],["Happy Hour Appetizers","HH Pickles","Ranch and a knife."],["Happy Hour Appetizers","HH Popcorn Shrimp","Remoulade."],["Happy Hour Appetizers","HH Potato Skins — Turkey","Monkey dish of chipotle ranch."],["Happy Hour Appetizers","HH Potato Skins — Bacon","Monkey dish of sour cream; chives."],["Soups / Salads","Caesar Salad","Add protein if necessary."],["Soups / Salads","Cobb Salad","4 oz ranch."],["Soups / Salads","Ahi Salad","1 lemon, chives."],["Soups / Salads","Shrimp Salad","1 lemon."],["Soups / Salads","Steak Salad","Add steak, then Gorgonzola; add knife."],["Soups / Salads","Wedge Salad","Knife."],["Soups / Salads","French Onion","Plate with doily, chives, spoon."],["Soups / Salads","Green Chile","Tray with doily, cheddar shreds, spoon, 2 mini tortillas."],["Soups / Salads","Red Chili","Tray with doily, cheddar shreds, pico, fresh jalapeños, sour cream, chives on sour cream, spoon, Texas toast."],["Soups / Salads","Tomato Soup","Tray with doily, sour cream drizzle from bottle, spoon, Texas toast."],["Taproom Favorites","Classic Reuben","Thousand Island."],["Taproom Favorites","Fish and Chips","Monkey dish of tartar, 2 lemons, coleslaw; carrots on slaw."],["Taproom Favorites","French Dip","Au jus, creamy horseradish."],["Taproom Favorites","Gyro","Tzatziki."],["Taproom Favorites","Meatball Sub","2 pepperoncinis; parsley sprinkled over sub."],["Taproom Favorites","Melted Monk","Cup of tomato with sour cream sauce, kettle chips, spoon."],["Taproom Favorites","Pulled Pork","2 oz BBQ, knife."],["Brunch","Avocado Toast","Orange, knife."],["Brunch","Classic & California Benedicts","Hollandaise, paprika, orange."],["Brunch","Chorizo Benny","Hollandaise, pico, orange."],["Brunch","Crab Cake Benedict","Hollandaise and chives (no paprika)."],["Brunch","Pulled Pork & Tellers Benny","Chipotle hollandaise."],["Brunch","Biscuits & Gravy","Chives, orange."],["Brunch","Breakfast Burrito","Shredded lettuce, pico, sour cream, knife."],["Brunch","Breakfast Sammy","Orange, knife."],["Brunch","Chicken & Waffle","Syrup, hot honey, 2 butter."],["Brunch","Chicken Fried Steak","Sausage gravy, 2 butter, orange, chives, knife."],["Brunch","Chilaquiles","Cilantro, 1 lime, small pile of microgreens."],["Brunch","Classic Breakfast","Orange, butter."],["Brunch","French Toast","2 butter, large syrup, powdered sugar, choice of protein."],["Brunch","Huevos Rancheros","No extra garnish or sauce."],["Brunch","Ham Steak & Eggs","Chives, 2 butter, orange, knife."],["Brunch","Hangover Stack","No extra garnish or sauce."],["Brunch","Kids Choco Chip Waffle","Bacon, syrup, whipped cream, applesauce."],["Brunch","Kids Classic Breakfast","No extra garnish or sauce."],["Brunch","Kids Egg Quesadilla","Bacon, orange, applesauce."],["Brunch","Kids French Toast","Bacon, syrup; smother in strawberries; whipped cream, orange, applesauce."],["Small Bites","$12 Burger Sliders","Comes with bacon on top."],["Small Bites","$12 Chicken Bacon Ranch Sliders","Smothered in ranch."],["Small Bites","$12 Fried Chicken Wrap","Serve with kettle chips."],["Small Bites","$12 Grilled Cheese","Cup of tomato soup with sour cream drizzle."],["Small Bites","$12 Steak Sliders","Smother in whiskey sauce."],["Late Night Menu","Barbacoa Taco","Cilantro and 1 lime."],["Late Night Menu","Potato Taco","Seasoned potatoes, cheddar, pico, lettuce, chipotle aioli."],["Late Night Menu","Chips & Pico","Silver tray of tortilla chips with 2 oz pico."]];
+let previousScreen='list';
+function renderLookup(){
+ const query=$('lookup-input').value.trim().toLocaleLowerCase();
+ const found=LOOKUP_ENTRIES.filter(e=>[e[0],e[1],e[2]].some(v=>v.toLocaleLowerCase().includes(query)));
+ const results=$('lookup-results');results.replaceChildren();
+ $('lookup-count').textContent=found.length+' of '+LOOKUP_ENTRIES.length+' items'+(query?' matching your search':'');
+ if(!found.length){results.append(el('div','panel muted','No matching item. Try a dish, sauce, or garnish.'));return}
+ let lastCategory='';
+ for(const [category,name,desc] of found){
+  if(category!==lastCategory){results.append(el('h2','lookup-section-heading',category));lastCategory=category}
+  const card=el('article','panel lookup-entry');
+  card.append(el('div','lookup-entry-name',name),el('div','lookup-description',desc));
+  results.append(card);
  }
- if(!target.children.length)target.append(node('div','empty','No duties added yet.'));
 }
-const target=$('prep-tasks');target.replaceChildren();for(const section of SECTIONS){const filtered=items.filter(item=>item.section===section&&(!item.brunchOnly||isBrunch()));if(!filtered.length)continue;const wrap=node('section','subsection');wrap.append(node('h3','',section));for(const item of filtered)wrap.append(taskRow('prep-'+item.id,item.name,item.par));target.append(wrap);}}
-function specialKey(type,day){return type==='daily'?'weekly-special-'+day:'special-monthly-'+monthKey(selectedDate);}
-function getSpecial(type,day){const saved=read('special-'+(type==='daily'?day:monthKey(selectedDate)),null);if(saved)return saved;return read(specialKey(type,day),{title:'',description:'',photo:''},true)||{title:'',description:'',photo:''};}
-function saveSpecial(type,day,data){return save('special-'+(type==='daily'?day:monthKey(selectedDate)),data);}
-function renderSpecials(){for(const type of ['daily','monthly']){
- const target=$(type+'-display');target.replaceChildren();const data=getSpecial(type,selectedDate.getDay());
- target.append(node('div','heading',type==='daily'?'Daily Special':'Monthly Special'));
- if(data.photo){const img=node('img');img.src=data.photo;img.alt='Photo of '+(data.title||'special');target.append(img);}
- if(data.title)target.append(node('h3','',data.title));if(data.description)target.append(node('p','',data.description));
- const prep=Array.isArray(data.prepItems)?data.prepItems:[];
- if(prep.length){const label=node('h3','','Prep items');target.append(label);const ul=node('ul','special-prep-list');for(const item of prep){const li=node('li','',typeof item==='string'?item:item.name);ul.append(li);}target.append(ul);}
- if(!data.title&&!data.description&&!data.photo&&!prep.length)target.append(node('div','empty','No special added yet.'));
-}}
-function photoToData(file){return new Promise((resolve,reject)=>{const fr=new FileReader();fr.onerror=reject;fr.onload=()=>{const img=new Image();img.onerror=reject;img.onload=()=>{const scale=Math.min(1,1000/Math.max(img.width,img.height));const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(img.width*scale));canvas.height=Math.max(1,Math.round(img.height*scale));canvas.getContext('2d').drawImage(img,0,0,canvas.width,canvas.height);resolve(canvas.toDataURL('image/jpeg',.68));};img.src=fr.result;};fr.readAsDataURL(file);});}
-function renderSpecialEditor(type,targetId,day){
- const target=$(targetId);target.replaceChildren();const s=getSpecial(type,day);
- const wrap=node('div','admin-card');wrap.append(node('h3','',type==='daily'?DAYS[day]+' Special':'Monthly Special'));
- const tlabel=node('label','','Title'),title=node('input','field');title.value=s.title||'';title.placeholder='Special name';title.maxLength=120;wrap.append(tlabel,title);
- const dlabel=node('label','','Description'),desc=node('textarea','field');desc.value=s.description||'';desc.placeholder='Description or ingredients';wrap.append(dlabel,desc);
- const plabel=node('label','','Picture'),input=node('input','field');input.type='file';input.accept='image/*';wrap.append(plabel,input);
- if(s.photo){const img=node('img');img.src=s.photo;img.alt='Current special photo';wrap.append(img);}
- // Each new prep item exposes a fresh blank field for the next item.
- wrap.append(node('label','','Special prep items'));
- wrap.append(node('p','small muted','These appear under this special and in AM → On Arrival.'));
- const prepWrap=node('div');wrap.append(prepWrap);
- let prepItems=(Array.isArray(s.prepItems)?s.prepItems:[]).map(v=>typeof v==='string'?v:v.name).filter(Boolean);
- function showPrepFields(){
-  prepWrap.replaceChildren();
-  prepItems.forEach((text,i)=>{
-   const r=node('div','special-prep-row');const field=node('input','field');field.value=text;field.placeholder='Prep item '+(i+1);field.maxLength=110;
-   field.addEventListener('input',()=>{prepItems[i]=field.value;});
-   const del=node('button','btn tiny','Remove');del.type='button';del.addEventListener('click',()=>{prepItems.splice(i,1);showPrepFields();});
-   r.append(field,del);prepWrap.append(r);
-  });
-  const actions=node('div','actions');const add=node('button','btn tiny dark',prepItems.length?'+ Add another':'+ Add prep item');add.type='button';
-  add.addEventListener('click',()=>{prepItems.push('');showPrepFields();const inputs=prepWrap.querySelectorAll('input');inputs[inputs.length-1]?.focus();});
-  actions.append(add);prepWrap.append(actions);
+function toggleLookup(){
+ if(!$('lookup-screen').hidden){go(previousScreen);return}
+ previousScreen=$('shift-screen').hidden?'list':'shift';
+ $('lookup-input').value='';renderLookup();go('lookup');
+ $('lookup-input').focus();
+}
+$('lookup-toggle').addEventListener('click',toggleLookup);
+$('lookup-input').addEventListener('input',renderLookup);
+
+function go(target){$('shift-screen').hidden=target!=='shift';$('list-screen').hidden=target!=='list';$('lookup-screen').hidden=target!=='lookup';$('back').hidden=target==='shift';$('lookup-toggle').classList.toggle('active',target==='lookup');window.scrollTo(0,0)}
+function chooseDay(day){const today=new Date();today.setHours(12,0,0,0);selectedDate=new Date(today);selectedDate.setDate(today.getDate()+(day-today.getDay()+7)%7);renderPicker()}
+function renderPicker(){const root=$('day-buttons');root.replaceChildren();for(let i=1;i<=7;i++){const d=i%7;root.append(button(SHORT[d],()=>chooseDay(d),'day'+(selectedDate.getDay()===d?' selected':'')))}}
+function taskLine(key,name,par='',note=''){const line=el('label','task'+(done[key]?' checked':'')),box=el('input');box.type='checkbox';box.checked=!!done[key];box.addEventListener('change',()=>{done[key]=box.checked;write(checkKey(),done);line.classList.toggle('checked',box.checked)});const copy=el('span','item-copy');copy.append(el('span','name',name));if(note)copy.append(el('span','item-note',note));line.append(box,copy);if(par)line.append(el('span','par',par));return line}
+function renderChecklist(){
+ const day=selectedDate.getDay(),isBrunch=shift==='AM'&&(day===6||day===0),isPrime=shift==='PM'&&(day===5||day===6);
+ $('brunch-details').hidden=!isBrunch;$('prime-details').hidden=!isPrime;
+ const arrival=$('arrival-tasks'),departure=$('departure-tasks');arrival.replaceChildren();departure.replaceChildren();
+ if(shift==='AM'){
+  for(const [id,name] of [['unload-cart','Unload cart'],['lay-mats','Lay mats'],['sanitizer-bucket','Make sanitizer bucket']]) arrival.append(taskLine('arr-'+id,name));
+  arrival.append(taskLine('arr-produce-check',day===1?'Check basil, lemons, and chives':'Check lemons, limes (ninth pan), basil, cilantro, and chives'));
+  if(day===3)arrival.append(taskLine('arr-wednesday-extra','Cut extra limes (ninth pan) and cilantro'));
+  if(isBrunch) arrival.append(taskLine('arr-brunch-setup','Set up for brunch'));
+  for(const [id,name] of [['stock-cold-table','Stock cold table'],['backup-sauces','Get backup sauces'],['stock-to-go','Stock to-go cups and items']]) departure.append(taskLine('depart-'+id,name));
+  if(isBrunch)departure.append(taskLine('depart-brunch','Put away and tear down brunch items'));
+ } else {
+  for(const [id,name] of [['stock-to-go','Stock to-go items'],['stock-steam-table','Stock steam table'],['check-backup-sauces','Check backup sauces']])arrival.append(taskLine('arr-'+id,name));
+  if(isPrime) arrival.append(taskLine('arr-prime-setup','Set up for Prime Rib'));
+  for(const [id,name] of [['mats','Put away mats'],['carts','Load carts'],['stock-am','Stock everything for AM'],['refresh-cold-table','Refresh pans and stock cold table']])departure.append(taskLine('depart-'+id,name));
  }
- showPrepFields();
- const specialData=photo=>({title:title.value.trim(),description:desc.value.trim(),photo,prepItems:prepItems.map(x=>x.trim()).filter(Boolean)});
- const buttons=node('div','actions'),store=node('button','btn red','Save special'),remove=node('button','btn','Remove picture');remove.disabled=!s.photo;
- store.addEventListener('click',async()=>{let photo=s.photo||'';if(input.files?.[0]){try{photo=await photoToData(input.files[0]);}catch(e){alert('Unable to read this picture.');return;}}if(saveSpecial(type,day,specialData(photo))){renderSpecialEditor(type,targetId,day);renderSpecials();renderTasks();}});
- remove.addEventListener('click',()=>{if(saveSpecial(type,day,specialData(''))){renderSpecialEditor(type,targetId,day);renderSpecials();renderTasks();}});
- buttons.append(store,remove);wrap.append(buttons);target.append(wrap);
+ if(!arrival.children.length)arrival.append(el('div','empty','No arrival duties assigned'));if(!departure.children.length)departure.append(el('div','empty','No departure duties assigned'));
+ const prep=$('prep-tasks');prep.replaceChildren();for(const section of SECTIONS){const subset=items.filter(i=>i.section===section);if(!subset.length)continue;const sub=el('section','subsection');sub.append(el('h3','',section));for(const item of subset){let note='';
+ if(item.id==='strawberries')note='Thaw from frozen when needed';
+ if(item.id==='cottage-cheese')note='Replace when empty';
+ if(item.id==='raw-horseradish')note='Replace as needed';
+ if(item.id==='oyster-sets')note=(day===6||day===0)?'Saturday–Sunday: If fewer than 12, build 18 backup.':'Monday–Friday: If fewer than 8, build 16 backup.';
+ sub.append(taskLine('item-'+item.id,item.name,item.par,note));
+}prep.append(sub)}
 }
-function renderAdminDays(){const target=$('admin-days');target.replaceChildren();for(let i=1;i<=7;i++){const d=i%7;const b=node('button','day'+(adminDay===d?' selected':''),DAYS[d].slice(0,3));b.type='button';b.addEventListener('click',()=>{adminDay=d;renderAdminDays();renderSpecialEditor('daily','daily-editor',d);});target.append(b);}}
-function openAdmin(source){fromAdmin=source;renderAdmin();show('admin');}
-function renderAdmin(){renderTab();renderAdminDays();$('month-title').textContent='Monthly Special · '+selectedDate.toLocaleDateString(undefined,{month:'long',year:'numeric'});renderSpecialEditor('daily','daily-editor',adminDay);renderSpecialEditor('monthly','monthly-editor',adminDay);renderPrepEditor();renderDutyEditor();}
-function renderTab(){for(const t of ['specials','prep','duties']){$('admin-'+t).hidden=t!==adminTab;const b=document.querySelector('[data-admin-tab="'+t+'"]');b.classList.toggle('dark',t===adminTab);}}
-function renderPrepEditor(){const target=$('prep-editor');target.replaceChildren();for(const section of SECTIONS){const subset=items.filter(i=>i.section===section);if(!subset.length)continue;target.append(node('h3','',section));for(const item of subset){const wrap=node('div','item-edit');wrap.append(node('strong','',item.name));const fields=node('div','form-grid');const nameLabel=node('label','','Item name'),name=node('input','field');name.value=item.name;name.maxLength=100;nameLabel.append(name);const parLabel=node('label','','Par'),par=node('input','field');par.value=item.par||'';par.maxLength=45;par.placeholder='Optional';parLabel.append(par);fields.append(nameLabel,parLabel);wrap.append(fields);
-const brunchLabel=node('label','checkrow'),brunch=node('input');brunch.type='checkbox';brunch.checked=!!item.brunchOnly;brunchLabel.append(brunch,node('span','','Brunch only (Sat–Sun)'));wrap.append(brunchLabel);
-const actions=node('div','actions'),saveButton=node('button','btn tiny dark','Save'),deleteButton=node('button','btn tiny','Remove');
-saveButton.addEventListener('click',()=>{item.name=name.value.trim()||item.name;item.par=par.value.trim();item.brunchOnly=brunch.checked;if(save('items',items)){renderPrepEditor();renderTasks();}});
-deleteButton.addEventListener('click',()=>{if(confirm('Remove '+item.name+'?')){items=items.filter(x=>x.id!==item.id);if(save('items',items)){renderPrepEditor();renderTasks();}}});actions.append(saveButton,deleteButton);wrap.append(actions);target.append(wrap);}}}
-function addItem(){const name=$('new-item-name').value.trim();if(!name){$('new-item-name').focus();return;}items.push({id:'added-'+Date.now()+'-'+Math.random().toString(36).slice(2,6),name,section:$('new-item-section').value,par:$('new-item-par').value.trim(),brunchOnly:$('new-item-brunch').checked});if(save('items',items)){$('new-item-name').value='';$('new-item-par').value='';$('new-item-brunch').checked=false;renderPrepEditor();renderTasks();}}
-function renderDutyEditor(){const sh=$('duties-shift').value,kind=$('duties-type').value;const target=$('duty-editor');target.replaceChildren();const tasks=duties[sh][kind];if(!tasks.length)target.append(node('p','empty','No tasks yet.'));tasks.forEach((task,i)=>{const row=node('div','item-edit'),field=node('input','field');field.value=task;field.maxLength=110;const actions=node('div','actions'),saveB=node('button','btn tiny dark','Save'),delB=node('button','btn tiny','Remove');saveB.addEventListener('click',()=>{if(!field.value.trim())return;duties[sh][kind][i]=field.value.trim();save('duties',duties);renderDutyEditor();renderTasks();});delB.addEventListener('click',()=>{duties[sh][kind].splice(i,1);save('duties',duties);renderDutyEditor();renderTasks();});actions.append(saveB,delB);row.append(field,actions);target.append(row);});}
-function addDuty(){const t=$('new-duty').value.trim();if(!t)return;duties[$('duties-shift').value][$('duties-type').value].push(t);if(save('duties',duties)){$('new-duty').value='';renderDutyEditor();renderTasks();}}
-for(const s of SECTIONS){const op=node('option','',s);op.value=s;$('new-item-section').append(op);}
-document.querySelectorAll('[data-select-shift]').forEach(b=>b.addEventListener('click',()=>{shift=b.dataset.selectShift;openList();}));
-$('change-shift').addEventListener('click',()=>{renderDayButtons();show('shift');});
-$('back').addEventListener('click',()=>{if(!$('admin-screen').hidden){if(fromAdmin==='list')openList();else{renderDayButtons();show('shift');}}else if(!$('shift-screen').hidden)openList();else if(!$('list-screen').hidden){renderDayButtons();show('shift');}});
-$('admin-from-picker').addEventListener('click',()=>openAdmin('shift'));
-$('admin-from-list').addEventListener('click',()=>openAdmin('list'));
-$('admin-done').addEventListener('click',()=>{if(fromAdmin==='shift'){renderDayButtons();show('shift');}else openList();});
-document.querySelectorAll('[data-admin-tab]').forEach(b=>b.addEventListener('click',()=>{adminTab=b.dataset.adminTab;renderTab();}));
-$('add-item').addEventListener('click',addItem);$('add-duty').addEventListener('click',addDuty);
-$('duties-shift').addEventListener('change',renderDutyEditor);$('duties-type').addEventListener('change',renderDutyEditor);
-$('clear-checks').addEventListener('click',()=>{if(confirm('Clear all checkmarks for this day and shift?')){done={};save(checkKey(),done);renderTasks();}});
-renderDayButtons();openList();
+function renderSpecialDisplays(){
+ const daily=$('daily-display'),monthly=$('monthly-display');
+ daily.replaceChildren();monthly.replaceChildren();
+ const special=DAILY_SPECIALS[selectedDate.getDay()];
+ daily.hidden=false;
+ daily.append(el('div','heading','Daily Special'));
+ if(special){daily.append(el('h3','',special.name),el('p','',special.instructions));}
+ else daily.append(el('p','muted','No daily special listed for this shift.'));
+ monthly.append(el('div','heading','Monthly Special'),el('h3','','Chicken Pot Pie'),el('p','','Nothing for expo.'));
+}
+function openList(){done=read(checkKey(),{});$('shift-title').textContent=DAYS[selectedDate.getDay()]+' '+shift;$('shift-date').textContent=selectedDate.toLocaleDateString(undefined,{month:'long',day:'numeric',year:'numeric'});renderSpecialDisplays();renderChecklist();for(const name of ['brunch','prime','duties','prep'])$(name+'-details').open=false;$('specials-popup').hidden=true;$('specials-toggle').textContent='Specials +';$('specials-toggle').setAttribute('aria-expanded','false');go('list')}
+document.querySelectorAll('[data-select-shift]').forEach(b=>b.addEventListener('click',()=>{shift=b.dataset.selectShift;openList()}));
+$('back').addEventListener('click',()=>{if(!$('lookup-screen').hidden){go(previousScreen)}else{renderPicker();go('shift')}});
+$('specials-toggle').addEventListener('click',()=>{const showing=$('specials-popup').hidden;$('specials-popup').hidden=!showing;$('specials-toggle').textContent=showing?'Specials −':'Specials +';$('specials-toggle').setAttribute('aria-expanded',String(showing))});
+$('clear-checks').addEventListener('click',()=>{if(confirm('Clear checkmarks for this shift?')){done={};write(checkKey(),done);renderChecklist()}});
+renderPicker();openList();
 })();
-</script>
-</body>
-</html>
+</script></body></html>
